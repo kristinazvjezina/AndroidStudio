@@ -1,0 +1,143 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bask">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- prvi linearlayout za Goste -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <!-- textview za Goste -->
+            <TextView
+                android:text="Gosti"
+                android:textColor="#D50000"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:text="0"
+                android:textColor="#000000"
+                android:id="@+id/gosti_rezultat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="25sp"/>
+
+            <!-- BUTTON za +3 koji smo definirali i u Javi sa naznakom plustrigosti -->
+
+            <Button
+                android:text="+3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="plustrigosti"
+                />
+
+            <!-- BUTTON za +2 koji smo definirali i u Javi sa naznakom plusdvagosti -->
+            <Button
+                android:text="+2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:onClick="plusdvagosti"/>
+
+            <!-- BUTTON za slobodno bacanje koji smo definirali i u Javi sa naznakom slobodnobacanjegosti -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SLOBODNO BACANJE"
+                android:textSize="20sp"
+                android:onClick="slobodnobacanjegosti"/>
+        </LinearLayout>
+
+        <!-- drugi linearlayout za domaće -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:text="Domaći"
+                android:textColor="#03A9F4"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:text="0"
+                android:textColor="#000000"
+                android:id="@+id/domaci_rezultat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="25sp"/>
+
+            <!-- BUTTON za +3 koji smo definirali i u Javi sa naznakom plustridomaci -->
+            <Button
+                android:text="+3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="plustridomaci"
+                />
+
+            <!-- BUTTON za +2 koji smo definirali i u Javi sa naznakom plusdvadomaci -->
+            <Button
+                android:text="+2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:onClick="plusdvadomaci"/>
+
+            <!-- BUTTON za slobodno bacanje koji smo definirali i u Javi sa naznakom slobodnobacanjedomaci -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SLOBODNO BACANJE"
+                android:textSize="20sp"
+                android:onClick="slobodnobacanjedomaci"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- treći linearlayout za poseban BUTTON pod nazivom RESET -->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:background="#8BC34A"
+        android:textSize="25sp"
+        android:onClick="reset"/>
+
+
+</LinearLayout>
